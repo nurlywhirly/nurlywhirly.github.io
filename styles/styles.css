@@ -265,3 +265,22 @@
         border-radius: 5%;
         color: #D6E1C7;
       }
+
+  /****** CALLIGRAPHY ******/
+  table.calligraphy-table img {
+      height: 25.5em;
+      border-radius: 5%;
+    }
+
+    body article table.calligraphy-table {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    body article table.calligraphy-table td {
+      padding: 0em;
+    }
+
+    body article.calligraphy-article {
+      margin: 0 auto;
+    }
