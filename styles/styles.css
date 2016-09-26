@@ -170,12 +170,8 @@
     }
 
   /****** CODE JOURNAL ******/
-    article.code-journal-blurb {
-      margin: 0 auto;
-      border: 1px solid #bac4ab;
-      border-radius: 1%;
-      margin-top: .25em;
-      padding: .25em;
+    #twitter-feed {
+      margin-left: 200px;
     }
 
     article section h6 {
