@@ -1,60 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Telex|Viga');
 /*************** GLOBAL ***************/
   html {
     font-family: Tahoma, Geneva, sans-serif;
-    background-color: #EDEBE6;
+    background-color: #FFFFFF;
+    height: 100%;
+  }
+
+  body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content {
+    flex: 1;
+    margin-bottom: 40px;
   }
 
   a {
     text-decoration: none;
-    color: #D6E1C7;
+    color: #2B2D42;
   }
 
-  a:hover {
-    color: #184914
-  }
-
-  body {
-    width: 55em;
+  body div article {
+    width: 58vw;
     margin: 0 auto;
   }
 
-  p, h1, h2, h3, h4, h5, h6 {
-    color: #403b33;
+  p {
+    font-family: 'Assistant', sans-serif;
+    color: #191919;
   }
 
-  article {
-    margin-top: 5em;
-    margin-bottom: 5em;
+  h1 {
+    font-family: 'Viga', sans-serif;
   }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Telex', sans-serif;
+    color: #191919;
+    /*font-size: 115%;*/
+  }
+
 
   /**** HEADER ****/
     body header {
         /** size **/
-      width: 100% ;
-      height: 200px;
+      width: 100vw;
+      height: 220px;
         /** color **/
-      background-color: #94C7B6;
+      background-color: #B80C09;
         /** margins&padding **/
-      padding: 1em 1em 0em 1em;
-        /** border **/
-      border-radius: 1%;
-      margin-top: 20px;
+      padding: 1em 3em 0em 1em;
+      margin-bottom: 5em;
     }
 
     header section {
       display: inline-block;
     }
-    header section h1, h2 {
-      color: #403B33;
+
+    header section h1, h2, p {
+      color: #191919;
+    }
+
+    .header-words h1 {
+      font-size: 4em;
+      margin-left: 1em;
+      margin-top: 8px;
     }
 
     .header-words p {
       font-style: italic;
-      margin-left: 2em;
-      margin-top: -1em;
+      margin-left: 10em;
+      margin-top: -3.7em;
     }
+
     .header-picture-overlay {
       float: right;
+      padding-right: 4em;
+      padding-top: 1em;
     }
 
     .header-picture-overlay .picture-2 {
@@ -72,6 +98,7 @@
       margin-right: 1em;
       border-radius: 50%;
     }
+
     .header-picture-overlay .picture-2:hover {
       /* pic animation */
       opacity: 0;
@@ -80,36 +107,44 @@
 
   /**** NAV BAR ****/
     nav {
-      margin-top: 70px;
+      margin-top: 60px;
     }
 
     nav * {
       display: inline;
-      color: #D3643B;
+      color: #FFFFFF;
     }
 
-    nav a h3.nav-button {
-      padding: .25em .5em .25em .5em;
-      /*border: #D3643B 1px solid;*/
+    .nav-button {
+      padding: 15px 10px 110px 5px;
       border-radius: 5%;
     }
 
-    nav a h3.nav-button:hover {
-      color: #D6E1C7;
+    .nav-button:hover {
+      color: #2B2D42;
     }
 
-    nav a h3.current-page-button {
+    .current-page-button {
       padding: .25em .5em .25em .5em;
       border-radius: 5%;
-      color: #D6E1C7;
+      font-style: italic;
+    }
+
+    .current-page-button:hover {
+      color: #2B2D42;
     }
 
   /**** FOOTER ****/
-    footer {
-      background-color: #94C7B6;
-      padding: 0em 1em 0em 1em;
-      border-radius: 1%;
-      width: 100%;
+    body footer {
+      background-color: #B80C09;
+      padding-top: 10px;
+      height: 50px;
+      width: 100vw;
+      /*position: relative;*/
+      /*bottom: 0;
+      left: 0
+      margin-top: 50em;*/
+      /*top: 100vh;*/
     }
 
     footer * {
@@ -117,44 +152,43 @@
     }
 
     footer h4 {
+      margin-top: -2px;
       padding-left: 1em;
+      margin-left: 100px;
     }
+
     footer p {
       float: right;
       font-size: .25em;
       font-style: italic;
-      padding-top: 2em;
+      padding-top: -1em;
+      margin-right: 100px;
     }
 
   /**** PAGE INTRO BLURBS ****/
-    *blurb {
-      margin-top: 2em;
+    [class*='*-blurb'] h4 {
+      color: #2B2D42;
     }
 
 /*************** PAGE-SPECIFIC STUFF ***************/
-
   /****** HOMEPAGE ******/
-  body article.homepage-blurb {
-    margin-bottom: 200px;
-  }
-
   .homepage-blurb h4 a {
-    color: #D3643B;
+    color: #2B2D42;
   }
 
     /**** SOCIAL MEDIA SECTION ****/
       #social-media-icons {
-        position: absolute;
+        margin: 0 auto;
       }
 
       #social-media-icons tr td a img {
         transition: all .5s ease-in-out;
         position: absolute;
-        transform: scale(.8)
+        transform: scale(.5)
       }
 
       #social-media-icons tr td a img:hover {
-        transform: scale(1);
+        transform: scale(.7);
       }
 
       #social-media-icons td:nth-last-of-type(odd) {
@@ -166,7 +200,7 @@
 
   /****** PORTFOLIO ******/
     .portfolio-blurb a {
-      color: #D3643B;
+      color: #B80C09;
     }
 
   /****** CODE JOURNAL ******/
@@ -188,7 +222,7 @@
     }
 
     .about-me-blurb a {
-      color: #D3643B;
+      color: #B80C09;
     }
 
   /****** PHOTOGRAPHY PAGES ******/
@@ -200,43 +234,17 @@
       margin-top: 120px;
       margin-bottom: 2em;
       margin-left: 1.5em;
+      margin: 0 auto;
     }
 
     .photo-table {
+      text-align: center;
       margin: 0 auto;
     }
 
     table.photo-table tbody tr td {
       text-align: center;
     }
-    /**** PHOTO HEADER ****/
-      body header.photography-header {
-          /** size **/
-        width: 55em;
-        height: 117px;
-          /** color **/
-        background-color: #94C7B6;
-          /** margins&padding **/
-        padding: 0em 1em 0em 1em;
-          /** border **/
-        border-radius: 1%;
-        margin-top: -119px;
-        position: fixed;
-      }
-
-      header section.photo-header-words {
-        display: inline-block;
-      }
-
-      header section.photo-header-words h1, h2 {
-        color: #403B33;
-      }
-
-      .photo-header-words p {
-        font-style: italic;
-        margin-left: 2em;
-        margin-top: -1em;
-      }
 
     /**** PHOTO NAV BAR ****/
       .photography-header nav {
@@ -245,12 +253,12 @@
 
       .photography-header nav * {
         display: inline;
-        color: #D3643B;
+        color: #B80C09;
       }
 
       .photography-header nav a h4.nav-button {
         padding: .25em .5em .25em .5em;
-        }
+      }
 
       nav a h4.nav-button:hover {
         color: #D6E1C7;
