@@ -183,22 +183,16 @@
     /**** SOCIAL MEDIA SECTION ****/
       #social-media-icons {
         margin-top: -20px;
+        width: 100%;
       }
 
-      #social-media-icons div {
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-      }
-
-      #social-media-icons div a img {
+      #social-media-icons tr th a img {
         transition: all .5s ease-in-out;
-        position: absolute;
         transform: scale(.5)
       }
 
-      #social-media-icons div a img:hover {
-        transform: scale(.7);
+      #social-media-icons tr th a img:hover {
+        transform: scale(.8);
       }
 
   /****** PORTFOLIO ******/
