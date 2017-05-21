@@ -173,29 +173,32 @@
 /*************** PAGE-SPECIFIC STUFF ***************/
   /****** HOMEPAGE ******/
   .homepage-blurb h4 a {
-    color: #2B2D42;
+    color: #B80C09;
+  }
+
+  .homepage-blurb ul li {
+    list-style-type: circle;
   }
 
     /**** SOCIAL MEDIA SECTION ****/
       #social-media-icons {
-        margin: 0 auto;
+        margin-top: -20px;
       }
 
-      #social-media-icons tr td a img {
+      #social-media-icons div {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+      }
+
+      #social-media-icons a img {
         transition: all .5s ease-in-out;
         position: absolute;
         transform: scale(.5)
       }
 
-      #social-media-icons tr td a img:hover {
+      #social-media-icons a img:hover {
         transform: scale(.7);
-      }
-
-      #social-media-icons td:nth-last-of-type(odd) {
-        padding-right: 140px;
-      }
-      #social-media-icons td:nth-last-of-type(even) {
-        padding-left: 140px;
       }
 
   /****** PORTFOLIO ******/
