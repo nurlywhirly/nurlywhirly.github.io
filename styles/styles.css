@@ -191,13 +191,13 @@
         display: inline-block;
       }
 
-      #social-media-icons a img {
+      #social-media-icons div a img {
         transition: all .5s ease-in-out;
         position: absolute;
         transform: scale(.5)
       }
 
-      #social-media-icons a img:hover {
+      #social-media-icons div a img:hover {
         transform: scale(.7);
       }
 
