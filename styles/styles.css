@@ -29,7 +29,7 @@
     margin: 0 auto;
   }
 
-  p {
+  p, li {
     font-family: 'Assistant', sans-serif;
     color: #191919;
   }
